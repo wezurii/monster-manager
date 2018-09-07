@@ -7,13 +7,11 @@ const General = React.createClass({
 
 		return (
 			<div className="monster-general">
-				
+
 				<h2 className="title">{monster.name}</h2>
-				<p><span className="sub-title">{monster.size} {monster.type} {monster.subtype} - {monster.alignment}</span></p>
-				<p>Armor Class: {monster.armor_class}</p>
-				<p>Hit Points: {monster.hit_points} ({monster.hit_dice})</p>
-				<p>Speed: {monster.speed}</p>
-				
+				{ monster.conflicts.military ? <p>Conflict Rank:<img src="/assets/military.png"/> {monster.conflicts.military} <img src="/assets/political.png"/> {monster.conflicts.political}</p> 						: null }
+				<p>{monster.description}</p>
+
 			</div>
 		)
 	}

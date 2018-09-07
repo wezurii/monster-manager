@@ -8,14 +8,10 @@ const Actions = React.createClass({
 
 		return (
 			<div className="monster-actions">
-				
-				<h3 className="section-title">Actions</h3>
 
-				{ monster.special_abilities ? monster.special_abilities.map((action, i) => <Action {...this.props} key={i} i={i} action={action} />) : null }
-				{ monster.reactions ? monster.reactions.map((action, i) => <Action {...this.props} key={i} i={i} action={action} />) : null }
-				{ monster.actions ? monster.actions.map((action, i) => <Action {...this.props} key={i} i={i} action={action} />) : null }
-				{ monster.legendary_actions ? monster.legendary_actions.map((action, i) => <Action {...this.props} key={i} i={i} action={action} />) : null }
+				<h3 className="section-title">Abilities</h3>
 
+				{ monster.abilities ? monster.abilities.map((action, i) => <Action {...this.props} key={i} i={i} action={action} />) : null }
 			</div>
 		)
 	}

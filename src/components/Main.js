@@ -10,7 +10,7 @@ const Main = React.createClass({
 			<div className="col-sm-12">
 
 				<Header {...this.props} />
-				
+
 				{React.cloneElement(this.props.children, this.props)}
 
 				<Footer />

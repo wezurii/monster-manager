@@ -9,9 +9,9 @@ const Action = React.createClass({
 			<div className="monster-action">
 
 				<h3>{this.props.section}</h3>
-			
+
 				<h4 className="section-title">{action.name}</h4>
-			
+
 				{ action.desc ? <span className="action-item">{action.desc}</span> : null }
 
 				<div className="action-summary">
@@ -19,7 +19,7 @@ const Action = React.createClass({
 					{ action.damage_dice 	? <span className="action-item">Damage Dice: {action.damage_dice}</span> 	: null }
 					{ action.damage_bonus 	? <span className="action-item">Damage Bonus: {action.damage_bonus}</span> 	: null }
 				</div>
-			
+
 			</div>
 		)
 	}
