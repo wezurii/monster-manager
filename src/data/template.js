@@ -2,67 +2,64 @@
   "name": "",
   "type": "",
   "conflicts": {
-    "military": ,
-    "political":
+    "military": "",
+    "political": ""
   },
   "description": "",
   "societal": {
-    "honor": ,
-    "glory": ,
-    "status": ,
+    "honor": "",
+    "glory": "",
+    "status": "",
     "demeanor": {
       "type": "",
       "bonus_type": "",
-      "bonus_magnitude": ,
+      "bonus_magnitude": "",
       "bane_type": "",
-      "bane_magnitude":
+      "bane_magnitude": ""
     }
   },
   "personal": {
-    "endurance": ,
-    "composure": ,
-    "focus": ,
-    "vigilance":
+    "endurance": "",
+    "composure": "",
+    "focus": "",
+    "vigilance": ""
   },
   "rings": {
-    "earth": ,
-    "air": ,
-    "fire": ,
-    "water": ,
-    "void":
+    "earth": "",
+    "air": "",
+    "fire": "",
+    "water": "",
+    "void": ""
   },
   "skills": {
-    "artisan": ,
-    "martial": ,
-    "scholar": ,
-    "social": ,
-    "trade":
+    "artisan": "",
+    "martial": "",
+    "scholar": "",
+    "social": "",
+    "trade": ""
   },
   "weapons": [
-      {
-        "name": "",
-        "range": ,
-        "damage": ,
-        "qualities": ""
-      }
-  ],
-  "armor":
     {
       "name": "",
+      "range": "",
+      "damage": "",
       "qualities": ""
-    },
-  "gear":"",
-  "abilities": [
-      {
-        "name": "",
-        "desc": ""
-      }
-  ],
-  "misc":
-    {
-      "species": "",
-      "book": "",
-      "page": ,
-      "type": ""
     }
+  ],
+  "armor": {
+    "name": "",
+    "resistance": "",
+    "qualities": ""
+  },
+  "gear": "",
+  "abilities": [
+    {
+      "name": "",
+      "desc": ""
+    }
+  ],
+  "species": "",
+  "book": "",
+  "page": "",
+  "tag": ""
 }

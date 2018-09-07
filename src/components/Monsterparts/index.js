@@ -27,10 +27,10 @@ const Monster = React.createClass({
 			<div className="monster-single row">
 
 				<Helmet
-					title={ monster.name + ' - Monster Manager Listing' }
+					title={ monster.name + ' - Enemy Listing' }
 					meta={[
 						{name: "description", content: monster.name},
-						{property: 'og:title', content: monster.name + ' - Monster Manager Listing'}
+						{property: 'og:title', content: monster.name + ' - Enemy Listing'}
 					]} />
 
 				<div className="col-sm-3 col-sm-push-9">

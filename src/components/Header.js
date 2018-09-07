@@ -20,7 +20,7 @@ const Filters = React.createClass({
 
 				<div className="col-sm-6">
 					<h1>
-						<Link to={`/`}>Monster Manager</Link>
+						<Link to={`/`}>Teki no Michi</Link>
 					</h1>
 				</div>
 

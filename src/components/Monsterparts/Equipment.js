@@ -9,7 +9,7 @@ const Equipment = React.createClass({
 			<div className="monster-weapons">
 
 				<h4 className="section-title">Armor</h4>
-				<p><b>{monster.armor.name}</b>: {monster.armor.qualities}</p>
+				<p><b>{monster.armor.name}</b> Resistance {monster.armor.resistance}, {monster.armor.qualities}</p>
 				<h4 className="section-title">Gear</h4>
 				<p>{monster.gear}</p>
 

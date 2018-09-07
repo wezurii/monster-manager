@@ -1,5 +1,139 @@
 const monsters = [
   {
+    "name": "Ashigaru",
+    "type": "Minion",
+    "conflicts": {
+      "military": 2,
+      "political": 1
+    },
+    "description": "Most armies consist of a small number of samurai who form elite units and the command cadre. They are backed by a large number of ashigaru: levied or even career soldiers who serve the Great Clans but are drawn from the lower classes.",
+    "societal": {
+      "honor": 25,
+      "glory": 35,
+      "status": 19,
+      "demeanor": {
+        "type": "Gruff",
+        "bonus_type": "Air",
+        "bonus_magnitude": 2,
+        "bane_type": "Water",
+        "bane_magnitude": -2
+      }
+    },
+    "personal": {
+      "endurance": 6,
+      "composure": 5,
+      "focus": 3,
+      "vigilance": 2
+    },
+    "rings": {
+      "earth": 3,
+      "air": 1,
+      "fire": 2,
+      "water": 2,
+      "void": 1
+    },
+    "skills": {
+      "artisan": "0",
+      "martial": 1,
+      "scholar": "0",
+      "social": 1,
+      "trade": 1
+    },
+    "weapons": [
+      {
+        "name": "Yari",
+        "range": 2,
+        "damage": 5,
+        "qualities": "Wargear"
+      }
+    ],
+    "armor": {
+      "name": "Ashigaru armor",
+      "resistance": 3,
+      "qualities": "Wargear"
+    },
+    "gear": "Peasant's garb, helmet, a handful of zeni and bu",
+    "abilities": [
+      {
+        "name": "Rank Tactics",
+        "desc": "When an ashigaru provides assistance to the Martial skill check of another character at range 0-2, that character adds one kept skill die showing a Success result instead of rolling an additional die."
+      }
+    ],
+    "species": "Human",
+    "book": "Beginner Game",
+    "page": 43,
+    "tag": "peasant"
+  },
+  {
+    "name": "Peasant",
+    "type": "Minion",
+    "conflicts": {
+      "military": 1,
+      "political": 1
+    },
+    "description": "Most of Rokugan's inhabitants are peasants. These hard-working people live their lives largely beneath the notice of samurai and yet without their toil, society would not exist.",
+    "societal": {
+      "honor": 20,
+      "glory": 30,
+      "status": 10,
+      "demeanor": {
+        "type": "Shrewd",
+        "bonus_type": "Water",
+        "bonus_magnitude": 2,
+        "bane_type": "Fire",
+        "bane_magnitude": -2
+      }
+    },
+    "personal": {
+      "endurance": 6,
+      "composure": 12,
+      "focus": 6,
+      "vigilance": 2
+    },
+    "rings": {
+      "earth": 2,
+      "air": 1,
+      "fire": 1,
+      "water": 2,
+      "void": 1
+    },
+    "skills": {
+      "artisan": "0,",
+      "martial": "0,",
+      "scholar": "0,",
+      "social": 1,
+      "trade": 1
+    },
+    "weapons": [
+      {
+        "name": "Fists",
+        "range": "0,",
+        "damage": 1,
+        "qualities": "Natural"
+      }
+    ],
+    "armor": {
+      "name": "None",
+      "resistance": "0",
+      "qualities": ""
+    },
+    "gear": "Rags, cloth headband, shoddy farm equipment, a handful of zeni",
+    "abilities": [
+      {
+        "name": "Sworn Protector",
+        "desc": "Once per round, when an Attack action check targetting another character at range 0-1 succeeds, the bushi may use this technique to spend 1 Void point to intervene. The bushi becomes the target of the attack instead of the original target."
+      },
+      {
+        "name": "Striking as Fire",
+        "desc": "When the bushi makes a Martial Arts [Melee, Ranged, or Unarmed] (Fire) check, they may spend opportunity to cause one target who would have suffered 1 or more fatigue to suffer a critical strike instead."
+      }
+    ],
+    "species": "Human",
+    "book": "Beginner Game",
+    "page": 41,
+    "tag": "peasant"
+  },
+  {
     "name": "Veteran Bushi",
     "type": "Adversary",
     "conflicts": {
@@ -40,114 +174,40 @@ const monsters = [
       "trade": 0
     },
     "weapons": [
-        {
-          "name": "Naginata",
-          "range": 2,
-          "damage": 6,
-          "qualities": "Cumbersome, Wargear"
-        },
-        {
-          "name": "Katana",
-          "range": 1,
-          "damage": 4,
-          "qualities": "Ceremonial"
-        }
-    ],
-    "armor":
       {
-        "name": "Iacquered armor",
-        "qualities": "Resistance [4],Ceremonial"
+        "name": "Naginata",
+        "range": 2,
+        "damage": 6,
+        "qualities": "Cumbersome, Wargear"
       },
-    "gear":"Daisho, plain robes (Mundane)",
-    "abilities": [
-        {
-          "name": "Sworn Protector",
-          "desc": "Once per round, when an Attack action check targetting another character at range 0-1 succeeds, the bushi may use this technique to spend 1 Void point to intervene. The bushi becomes the target of the attack instead of the original target."
-        },
-        {
-          "name": "Striking as Fire",
-          "desc": "When the bushi makes a Martial Arts [Melee, Ranged, or Unarmed] (Fire) check, they may spend opportunity to cause one target who would have suffered 1 or more fatigue to suffer a critical strike instead."
-        }
-    ],
-    "misc":
       {
-        "species": "Human",
-        "book": "Beginner Game",
-        "page": 43,
-        "type": "samurai"
+        "name": "Katana",
+        "range": 1,
+        "damage": 4,
+        "qualities": "Ceremonial"
       }
-  },
-{
-  "name": "Peasant",
-  "type": "Minion",
-  "conflicts": {
-    "military": 1,
-    "political": 1
-  },
-  "description": "Most of Rokugan's inhabitants are peasants. These hard-working people live their lives largely beneath the notice of samurai and yet without their toil, society would not exist.",
-  "societal": {
-    "honor": 20,
-    "glory": 30,
-    "status": 10,
-    "demeanor": {
-      "type": "Shrewd",
-      "bonus_type": "Water",
-      "bonus_magnitude": 2,
-      "bane_type": "Fire",
-      "bane_magnitude": -2
-    }
-  },
-  "personal": {
-    "endurance": 6,
-    "composure": 12,
-    "focus": 6,
-    "vigilance": 2
-  },
-  "rings": {
-    "earth": 2,
-    "air": 1,
-    "fire": 1,
-    "water": 2,
-    "void": 1
-  },
-  "skills": {
-    "artisan": "0,",
-    "martial": "0,",
-    "scholar": "0,",
-    "social": 1,
-    "trade": 1
-  },
-  "weapons": [
-    {
-      "name": "Fists",
-      "range": "0,",
-      "damage": 1,
-      "qualities": "Natural"
-    }
-  ],
-  "armor": {
-    "name": "",
-    "qualities": ""
-  },
-  "gear": "Rags, cloth headband, shoddy farm equipment, a handful of zeni",
-  "abilities": [
-    {
-      "name": "Sworn Protector",
-      "desc": "Once per round, when an Attack action check targetting another character at range 0-1 succeeds, the bushi may use this technique to spend 1 Void point to intervene. The bushi becomes the target of the attack instead of the original target."
+    ],
+    "armor": {
+      "name": "Iacquered armor",
+      "resistance": 4,
+      "qualities": "Ceremonial"
     },
-    {
-      "name": "Striking as Fire",
-      "desc": "When the bushi makes a Martial Arts [Melee, Ranged, or Unarmed] (Fire) check, they may spend opportunity to cause one target who would have suffered 1 or more fatigue to suffer a critical strike instead."
-    }
-  ],
-  "misc": {
+    "gear": "Daisho, plain robes (Mundane)",
+    "abilities": [
+      {
+        "name": "Sworn Protector",
+        "desc": "Once per round, when an Attack action check targetting another character at range 0-1 succeeds, the bushi may use this technique to spend 1 Void point to intervene. The bushi becomes the target of the attack instead of the original target."
+      },
+      {
+        "name": "Striking as Fire",
+        "desc": "When the bushi makes a Martial Arts [Melee, Ranged, or Unarmed] (Fire) check, they may spend opportunity to cause one target who would have suffered 1 or more fatigue to suffer a critical strike instead."
+      }
+    ],
     "species": "Human",
     "book": "Beginner Game",
-    "page": 41,
-    "type": "peasant"
+    "page": 43,
+    "tag": "samurai"
   }
-}
-
 ];
 
 export default monsters;

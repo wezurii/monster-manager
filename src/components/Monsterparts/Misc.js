@@ -10,8 +10,8 @@ const Misc = React.createClass({
 
 				<h3 className="section-title">Misc</h3>
 
-				{ monster.misc.species ? <p>Species: {monster.misc.species} </p>							: null }
-				{ monster.misc.book				? <p>{monster.misc.book} Page {monster.misc.page}</p> 							: null }
+				{ monster.misc.species ? <p>Species: {monster.species} </p>							: null }
+				{ monster.misc.book				? <p>{monster.book} Page {monster.page}</p> 							: null }
 
 
 			</div>

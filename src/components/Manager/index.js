@@ -14,13 +14,13 @@ const Manager = React.createClass ({
 		if ( encounter.length > 0 ) {
 
 			return (
-			
+
 			<div className="monster-manager row">
 				<Helmet
-					title={ 'Monster Manager: Encounter Admin' }
+					title={ 'Teki no Michi: Encounter Admin' }
 					meta={[
-						{name: "description", content: 'A Dungeons and Dragons 5e Encounter Manager for GMs.' },
-						{property: 'og:title', content: 'Monster Manager: Encounter Admin'},
+						{name: "description", content: 'An L5R RPG 5e encounter manager for GMs.' },
+						{property: 'og:title', content: 'Teki no Michi: Encounter Admin'},
 					]} />
 
 					{encounter.map((monster, i) => <Encounterlisting {...this.props} key={i} i={i} monster={monster} />)}
@@ -30,13 +30,13 @@ const Manager = React.createClass ({
 		} else {
 
 			return (
-			
+
 			<div className="monster-manager row">
 				<Helmet
-					title={ 'Monster Manager: Encounter Admin' }
+					title={ 'Teki no Michi: Encounter Admin' }
 					meta={[
-						{name: "description", content: 'A Dungeons and Dragons 5e encounter manager for GMs.' },
-						{property: 'og:title', content: 'Monster Manager: Encounter Admin'},
+						{name: "description", content: 'An L5R RPG 5e encounter manager for GMs.' },
+						{property: 'og:title', content: 'Teki no Michi: Encounter Admin'},
 					]} />
 
 					<div className="alert alert-danger col-xs-12">No monsters have been added to your encounter.</div>
