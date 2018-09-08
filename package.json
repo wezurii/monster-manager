@@ -50,5 +50,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/wezurii/teki-no-michi"
+  },
+  "dependencies": {
+    "fly": "^2.0.6"
   }
 }
